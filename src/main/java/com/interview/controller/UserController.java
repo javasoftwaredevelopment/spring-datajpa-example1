@@ -21,6 +21,7 @@ public class UserController {
     2) Yeni bir User kaydı oluşturacak servis ucu ekle ve kaydetmeden önce validation uygula.
        İpucu: Projede validation için gerekli dependency eksik olabilir mi acaba :)
 
+       Ornek:
        Eklenecek kullanıcıya ait JSON data:
         {
             "firstName": "GÖKSU",
@@ -39,9 +40,11 @@ public class UserController {
             ]
         }
 
-    3) User silmek için servis ucu ekle. Sadece ADMIN rolüne sahip kullanıcıların bu işlemi yapabilmesini sağla.
+    3) Bir kullanicinin, son 10 gun icerisinde olusturulan adreslerinin sayisini donen bir servis ucu ekle.
 
-    4) Properties dosyasına "environment.name" isimli bir özellik ekle ve bu değeri uygulama içinde kullan.
+    4) User silmek için servis ucu ekle. Sadece ADMIN rolüne sahip kullanıcıların bu işlemi yapabilmesini sağla.
+
+    5) Properties dosyasına "environment.name" isimli bir özellik ekle ve bu değeri uygulama içinde kullan.
     */
 
     private final UserService userService;

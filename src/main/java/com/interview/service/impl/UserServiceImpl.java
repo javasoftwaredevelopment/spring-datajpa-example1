@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
                 user.getId(),
                 user.getFirstName(),
                 user.getLastName(),
-                user.getAddresses().stream().map(this::toAddressDto).collect(Collectors.toList()));
+                user.getUserAddresses().stream().map(this::toAddressDto).collect(Collectors.toList()));
     }
 
     private AddressDto toAddressDto(Address address) {

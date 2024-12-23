@@ -9,10 +9,10 @@
         <relativePath/>
     </parent>
 
-    <name>spring-datajpa-postgresql</name>
+    <name>spring-datajpa-example1</name>
 
     <groupId>com.springtutor</groupId>
-    <artifactId>spring-datajpa-postgresql</artifactId>
+    <artifactId>spring-datajpa-example1</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -39,10 +39,9 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -54,6 +53,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>7.0.5.Final</version>
         </dependency>
     </dependencies>
 
